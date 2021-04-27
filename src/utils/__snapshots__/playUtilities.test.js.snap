@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`playUtilities dynamicSort transforms list of data into new js map for reporting 1`] = `
+Array [
+  Object {
+    "rating": "2",
+    "speechCount": 345,
+    "title": "one",
+    "wordCount": "8,558",
+  },
+  Object {
+    "rating": "1",
+    "speechCount": 345,
+    "title": "two",
+    "wordCount": "5,345",
+  },
+]
+`;
+
+exports[`playUtilities getPlayDataByPropKey returns an array of objects with one value of the given prop 1`] = `
+Array [
+  Object {
+    "color": "#bc0502",
+    "genre": "Comedy",
+    "id": 1,
+    "image": "https://www.dropbox.com/s/6jsc1ij6xg1e04z/1.png?raw=1",
+    "speechCount": "1,034",
+    "title": "All's Well That Ends Well",
+    "wordCount": "23,009",
+    "year": 1602,
+  },
+  Object {
+    "color": "#9e3dcd",
+    "genre": "History",
+    "id": 8,
+    "image": "https://www.dropbox.com/s/7ixd0o19qw15rut/8.png?raw=1",
+    "speechCount": 884,
+    "title": "Henry IV, Part I",
+    "wordCount": "24,579",
+    "year": 1597,
+  },
+  Object {
+    "color": "#2e9d75",
+    "genre": "Tragedy",
+    "id": 2,
+    "image": "https://www.dropbox.com/s/bnrkj5o5wz68us6/2.png?raw=1",
+    "speechCount": "1,361",
+    "title": "Antony and Cleopatra",
+    "wordCount": "24,905",
+    "year": 1606,
+  },
+]
+`;
+
+exports[`playUtilities getPlayReportData transforms list of data into new js map for reporting 1`] = `
+Array [
+  Object {
+    "rating": "1",
+    "speeches": 345,
+    "title": "it",
+    "words": 5345,
+  },
+  Object {
+    "rating": "2",
+    "speeches": 345,
+    "title": "it",
+    "words": 8558,
+  },
+]
+`;
+
+exports[`playUtilities joinPlayDataWithReviews joins a map of data with another map and returns a list 1`] = `
+Immutable.List [
+  Immutable.Map {
+    "genre": "Tragedy",
+    "color": "#922b7f",
+    "wordCount": "27,589",
+    "play_id": 5,
+    "speechCount": "1,240",
+    "test": "1",
+    "title": "Coriolanus",
+    "id": 5,
+    "image": "https://www.dropbox.com/s/3at834li0zkn7w4/5.png?raw=1",
+    "year": 1607,
+  },
+  Immutable.Map {
+    "genre": "History",
+    "color": "#9e3dcd",
+    "wordCount": "24,579",
+    "play_id": 8,
+    "speechCount": 884,
+    "test": "2",
+    "title": "Henry IV, Part I",
+    "id": 8,
+    "image": "https://www.dropbox.com/s/7ixd0o19qw15rut/8.png?raw=1",
+    "year": 1597,
+  },
+]
+`;

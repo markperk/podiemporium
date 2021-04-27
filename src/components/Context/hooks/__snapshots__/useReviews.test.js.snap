@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useReviews filterCount returns reviews, setter fns and a filterCount 1`] = `
+Object {
+  "useGenre": Array [
+    "comedy",
+    [MockFunction],
+  ],
+  "usePlayId": Array [
+    "1",
+    [MockFunction],
+  ],
+  "useRating": Array [
+    Array [
+      0.8,
+      2,
+    ],
+    [MockFunction],
+  ],
+}
+`;
+
+exports[`useReviews filteredReviews && filterSetters returns an empty array of reviews 1`] = `
+Array [
+  Immutable.List [],
+  Object {
+    "useGenre": Array [
+      "comedy",
+      [MockFunction],
+    ],
+    "usePlayId": Array [
+      "1",
+      [MockFunction],
+    ],
+    "useRating": Array [
+      Array [
+        0.8,
+        2,
+      ],
+      [MockFunction],
+    ],
+  },
+  Array [
+    0,
+    1,
+  ],
+]
+`;

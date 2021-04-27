@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useFilters genre returns filters, hooks 1`] = `
+Immutable.Map {
+  "genre": Immutable.List [
+    Immutable.List [
+      "tragedy",
+    ],
+  ],
+  "play_id": Immutable.List [
+    Immutable.List [
+      "tragedy",
+    ],
+  ],
+  "rating": Immutable.List [
+    0,
+    0,
+  ],
+}
+`;
+
+exports[`useFilters play_id returns filters, hooks 1`] = `
+Immutable.Map {
+  "genre": Immutable.List [
+    "1",
+  ],
+  "play_id": Immutable.List [
+    "1",
+  ],
+  "rating": Immutable.List [
+    0,
+    0,
+  ],
+}
+`;
+
+exports[`useFilters rating returns filters, hooks 1`] = `
+Immutable.Map {
+  "genre": Immutable.List [
+    Immutable.List [
+      1,
+      2,
+    ],
+  ],
+  "play_id": Immutable.List [
+    Immutable.List [
+      1,
+      2,
+    ],
+  ],
+  "rating": Immutable.List [
+    1,
+    2,
+  ],
+}
+`;

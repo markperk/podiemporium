@@ -27,7 +27,7 @@ const HomeSwitchboard = ({ classes }) => {
       />
       <Switch>
         <Route
-          path='/home/reviews'
+          path='/apps/app-store'
           render={props =>
             <Reviews
               reviews={reviews}
@@ -37,7 +37,7 @@ const HomeSwitchboard = ({ classes }) => {
         />
         <Route
           exact
-          path='/home/reports'
+          path='/apps/reports'
           render={props =>
             <Reports
               reviews={reviews}
@@ -45,7 +45,7 @@ const HomeSwitchboard = ({ classes }) => {
             />
           }
         />
-        <Redirect to='/home/reviews' />
+        <Redirect to='/apps/app-store' />
       </Switch>
     </Flexbox>
   )

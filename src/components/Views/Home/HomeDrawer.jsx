@@ -46,15 +46,15 @@ const HomeDrawer = ({ classes, useDrawer }) => {
       >
         {
           <List>
-            <NavLink to='/home/reviews'>
+            <NavLink to='/apps/app-store'>
               <ListItem button>
                 <ListItemIcon>
                   <DashboardIcon />
                 </ListItemIcon>
-                <ListItemText primary="Reviews" />
+                <ListItemText primary="Composer App Tutorials" />
               </ListItem>
             </NavLink>
-            <NavLink to='/home/reports'>
+            <NavLink to='/apps/reports'>
               <ListItem button>
                 <ListItemIcon>
                   <BarChartIcon />
@@ -62,12 +62,12 @@ const HomeDrawer = ({ classes, useDrawer }) => {
                 <ListItemText primary="Reports" />
               </ListItem>
             </NavLink>
-            <NavLink to='/home/standards'>
+            <NavLink to='/apps/guide'>
               <ListItem button>
                 <ListItemIcon>
                   <AssignmentIcon />
                 </ListItemIcon>
-                <ListItemText primary="Standards" />
+                <ListItemText primary="Guide" />
               </ListItem>
             </NavLink>
           </List>

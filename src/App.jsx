@@ -6,7 +6,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom'
-import { Login, Home } from './components/Views'
+import { Home } from './components/Views'
 import { useTheme } from './components/Context/hooks'
 
 const App = () => {
@@ -16,9 +16,7 @@ const App = () => {
     <MuiThemeProvider theme={theme}>
       <Router>
         <Switch>
-          <Route path='/login' component={Login} />
-          <Route path='/home' component={Home} />
-          <Redirect to='/login' />
+          <Route path='/apps' component={Home} />
         </Switch>
       </Router>
     </MuiThemeProvider>

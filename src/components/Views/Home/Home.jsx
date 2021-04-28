@@ -85,7 +85,7 @@ const Home = ({ classes, location }) => {
           boundary={<div>Error loading reviews...</div>}
         >
           <Switch>
-            <Route exact path='/home/standards' component={Standards} />
+            <Route exact path='/apps/guide' component={Standards} />
             <HomeSwitchboard />
           </Switch>
         </BoundedSuspense>

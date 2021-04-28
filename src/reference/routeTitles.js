@@ -1,8 +1,8 @@
 const routeTitles = {
-  '/home': 'Home',
-  '/home/reviews': 'Reviews',
-  '/home/reports': 'Reports',
-  '/home/standards': 'Standards',
+  '/apps': 'apps',
+  '/apps/app-store': 'App Store',
+  '/apps/reports': 'Reports',
+  '/apps/guide': 'Guide',
 }
 
 export const getRouteTitles = path =>

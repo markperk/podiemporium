@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { BoundedSuspense } from 'react-brix'
-import { Switch, Route } from 'react-router-dom'
+import { Switch } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/Menu'
+import PodiumLogo from '../../../img/Podium_Logo_Black.svg'
 import HomeDrawer from './HomeDrawer'
 import HomeSwitchboard from './HomeSwitchboard'
-import ReviewLoader from '../Reviews/ReviewLoader'
+import ReviewLoader from '../Guides/ReviewLoader'
 import HomeUser from './HomeUser'
-import Standards from '../Standards'
 import { getRouteTitles } from '../../../reference/routeTitles'
 import { Flexbox } from '../../Layout'
 import {
@@ -27,17 +27,22 @@ const styles = theme => ({
     background: theme.palette.background.default,
     display: 'flex',
     flexDirection: 'column',
+    padding: '0 110px',
     flexGrow: 1,
+  },
+  icon: {
+    height: 15,
+    marginRight: 20,
   },
   menu: {
     marginRight: theme.spacing.unit * 3,
   },
   bar: {
     background: theme.overrides.appBarBackgroundColor,
-    borderBottom: `1px solid ${theme.palette.primary.main}`,
+    borderBottom: `1px solid black`,
   },
   color: {
-    color: theme.overrides.appBarColor,
+    color: 'black',
   },
   title: {
     flexGrow: 1,
@@ -59,23 +64,16 @@ const Home = ({ classes, location }) => {
         position='static'
       >
         <Toolbar>
-          <IconButton
-            classes={{ root: classes.color }}
-            className={classes.menu}
-            aria-label='Menu'
-            onClick={() => setOpen(true)}
-          >
-            <MenuIcon />
-          </IconButton>
+          <img className={classes.icon} src={PodiumLogo} alt='podium logo' />
           <Typography
             classes={{ root: classes.color }}
             className={classes.title}
-            variant='h6'
+            variant='h5'
             noWrap
           >
-            {document.title}
+            Developer Guides
           </Typography>
-          <HomeUser />
+          {/* <HomeUser /> */}
         </Toolbar>
       </AppBar>
       <HomeDrawer useDrawer={[open, setOpen]} />
@@ -85,7 +83,6 @@ const Home = ({ classes, location }) => {
           boundary={<div>Error loading reviews...</div>}
         >
           <Switch>
-            <Route exact path='/apps/guide' component={Standards} />
             <HomeSwitchboard />
           </Switch>
         </BoundedSuspense>

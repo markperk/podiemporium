@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import FilterPanel from '../Filters/FilterPanel'
-import Reviews from '../Reviews/Reviews'
-import Reports from '../Reports/Reports'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import Guides from '../Guides/Guides'
+import { Switch, Route } from 'react-router-dom'
 import { withStyles } from '@material-ui/core'
 import { Flexbox } from '../../Layout'
-import { useReviews } from '../../Context/hooks'
+import { useGuides } from '../../Context/hooks'
 
 const styles = theme => ({
   fill: {
@@ -16,7 +15,8 @@ const styles = theme => ({
 })
 
 const HomeSwitchboard = ({ classes }) => {
-  const [reviews, filterSetters, filterCount] = useReviews()
+  const [guides, filterSetters, filterCount] = useGuides()
+  console.log('guides', guides.toJS())
 
   return (
 
@@ -27,25 +27,14 @@ const HomeSwitchboard = ({ classes }) => {
       />
       <Switch>
         <Route
-          path='/apps/app-store'
+          path='/apps/guides'
           render={props =>
-            <Reviews
-              reviews={reviews}
+            <Guides
+              guides={guides}
               {...props}
             />
           }
         />
-        <Route
-          exact
-          path='/apps/reports'
-          render={props =>
-            <Reports
-              reviews={reviews}
-              {...props}
-            />
-          }
-        />
-        <Redirect to='/apps/app-store' />
       </Switch>
     </Flexbox>
   )

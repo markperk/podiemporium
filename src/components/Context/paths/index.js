@@ -1,9 +1,9 @@
 import { theme } from './theme'
-import { reviews } from './reviews'
+import { guides } from './guides'
 import { filters } from './filters'
 
 export const paths = {
   theme,
-  reviews,
+  guides,
   filters,
 }

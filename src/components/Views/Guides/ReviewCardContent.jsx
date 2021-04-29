@@ -16,9 +16,7 @@ const styles = theme => ({
   },
   quote: {
     position: 'relative',
-    paddingLeft: '1em',
-    borderLeft: `0.3em solid ${theme.palette.grey[200]}`,
-    fontSize: 18,
+    fontSize: 12,
     color: theme.overrides.quoteText,
     lineHeight: '20px',
     fontWeight: 300,
@@ -32,12 +30,12 @@ const styles = theme => ({
   },
 })
 
-const ReviewCardContent = ({ classes, review }) => {
+const ReviewCardContent = ({ classes, guides }) => {
 
   return (
     <CardContent classes={{ root: classes.root }}>
       <Typography className={classes.quote}>
-        {review.get('body')}
+        {guides.get('body')}
       </Typography>
     </CardContent>
   )
@@ -45,7 +43,7 @@ const ReviewCardContent = ({ classes, review }) => {
 
 ReviewCardContent.propTypes = {
   classes: PropTypes.object.isRequired,
-  review: PropTypes.instanceOf(Map)
+  guides: PropTypes.instanceOf(Map)
 }
 
 export default withStyles(styles)(ReviewCardContent)

@@ -86,7 +86,7 @@ const FilterPanel = props => {
           }}
         >
           <Typography className={classes.heading} variant='button'>
-            {`Filters (${count} / ${totalCount} Apps) `}
+            {`Filters (${count} / ${totalCount} Guides) `}
           </Typography>
           <FilterHeadline filterSetters={filterSetters} />
         </ExpansionPanelSummary>

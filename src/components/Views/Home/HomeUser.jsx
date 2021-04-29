@@ -20,11 +20,6 @@ const HomeUser = ({ history }) => {
     setTheme(toggledTheme)
   }
 
-  const logoutUser = () => {
-    setAnchorEl(null)
-    return history.push('/login')
-  }
-
   return (
     <div>
       <IconButton
@@ -34,8 +29,8 @@ const HomeUser = ({ history }) => {
         color="inherit"
       >
         <Avatar
-          alt="Shakespeare"
-          src='https://www.dropbox.com/s/jqa6dbcr8kk4i5d/shake-avatar.jpg?raw=1'
+          alt="User"
+          src=''
         />
       </IconButton>
       <Menu
@@ -53,7 +48,7 @@ const HomeUser = ({ history }) => {
         onClose={() => setAnchorEl(null)}
       >
         <MenuItem onClick={toggleTheme}>Toggle Theme</MenuItem>
-        <MenuItem onClick={logoutUser}>Log out</MenuItem>
+        <MenuItem onClick={() => {}}>Log out</MenuItem>
       </Menu>
     </div>
   )

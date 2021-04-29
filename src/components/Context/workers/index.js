@@ -1,5 +1,5 @@
-import { getReviews } from './getReviews'
+import { getGuides } from './getGuides'
 
 export {
-  getReviews,
+  getGuides,
 }

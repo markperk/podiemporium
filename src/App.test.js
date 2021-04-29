@@ -21,12 +21,4 @@ describe('App', () => {
     expect(wrapper.find(MuiThemeProvider).prop('theme')).toBe('t')
   })
 
-  test('render contains route, and redirect', () => {
-    const wrapper = shallow(<App />)
-    const redirect = <Redirect to="/login" />
-
-    expect(wrapper.dive().find(Route)).toHaveLength(2)
-    expect(wrapper).toContainReact(redirect)
-  })
-
 })

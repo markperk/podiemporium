@@ -1,15 +1,12 @@
 import React from 'react'
 import { Map } from 'immutable'
 import PropTypes from 'prop-types'
-import ThumbDown from '@material-ui/icons/ThumbDown'
-import ThumbUp from '@material-ui/icons/ThumbUp'
 import { formatRelative, subDays } from 'date-fns'
 import {
   withStyles,
   CardHeader,
   Avatar,
   Typography,
-  IconButton,
 } from '@material-ui/core'
 
 const styles = theme => ({
@@ -36,8 +33,9 @@ const styles = theme => ({
   }
 })
 
-const ReviewCardBase = ({ classes, review, play }) => {
-  const date = new Date(review.get('publish_date'))
+const ReviewCardBase = ({ classes, guides }) => {
+  console.log('guides card base', guides)
+  const date = new Date(guides.get('publish_date'))
   const publishDate = formatRelative(subDays(date, 3), date)
 
   return (
@@ -52,24 +50,16 @@ const ReviewCardBase = ({ classes, review, play }) => {
       }}
       avatar={
         <Avatar
-          aria-label={review.get('rating')}
-          style={{ backgroundColor: play.get('color') }}
+          aria-label={guides.get('rating')}
+          style={{ backgroundColor: 'gray' }}
         >
-          {review.get('rating')}
+          P
         </Avatar>
       }
       title={
         <Typography noWrap>
-          {review.get('author')}
+          {guides.get('author')}
         </Typography>
-      }
-      action={
-        <IconButton disabled>
-          {review.get('rating') > 2.5 ?
-            <ThumbUp className={classes.thumb} /> :
-            <ThumbDown className={classes.thumb} />
-          }
-        </IconButton>
       }
     />
   )
@@ -77,8 +67,7 @@ const ReviewCardBase = ({ classes, review, play }) => {
 
 ReviewCardBase.propTypes = {
   classes: PropTypes.object.isRequired,
-  review: PropTypes.instanceOf(Map),
-  play: PropTypes.instanceOf(Map)
+  guides: PropTypes.instanceOf(Map)
 }
 
 export default withStyles(styles)(ReviewCardBase)

@@ -1,6 +1,6 @@
 const routeTitles = {
   '/apps': 'apps',
-  '/apps/app-store': 'App Store',
+  '/apps/guides': 'Guides',
   '/apps/reports': 'Reports',
   '/apps/guide': 'Guide',
 }

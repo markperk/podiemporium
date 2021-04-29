@@ -1,11 +1,9 @@
 import { useTheme } from './useTheme'
-import { useReviews } from './useReviews'
+import { useGuides } from './useGuides'
 import { useFilters } from './useFilters'
-import { useLogin } from './useLogin'
 
 export {
-  useLogin,
   useTheme,
-  useReviews,
+  useGuides,
   useFilters,
 }

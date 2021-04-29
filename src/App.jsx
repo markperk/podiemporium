@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from 'react-router-dom'
 import { Home } from './components/Views'
 import { useTheme } from './components/Context/hooks'

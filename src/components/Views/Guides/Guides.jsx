@@ -6,7 +6,7 @@ import AutoSizer from 'react-virtualized-auto-sizer'
 import { FixedSizeList as GridList } from 'react-window'
 import { Flexbox } from '../../Layout'
 import { withStyles } from '@material-ui/core'
-import ReviewRow from './ReviewRow'
+import ReviewRow from './GuidesRow'
 import ReviewsNone from './ReviewsNone'
 
 const CARD_HEIGHT = 400
@@ -19,21 +19,21 @@ const styles = theme => ({
   }
 })
 
-const Reviews = ({ classes, reviews }) => {
+const Guides = ({ classes, guides }) => {
 
-  const getCardData = memoize((classes, cardsPerRow, reviews) => ({
-    classes, cardsPerRow, reviews
+  const getCardData = memoize((classes, cardsPerRow, guides) => ({
+    classes, cardsPerRow, guides
   }))
 
   return (
     <Flexbox className={classes.fill}>
-      {reviews.size > 0 ?
+      {guides.size > 0 ?
         (
           <AutoSizer>
             {({ height, width }) => {
               const cardsPerRow = Math.floor(width / CARD_WIDTH) || 1
-              const rowCount = Math.ceil(reviews.size / cardsPerRow)
-              const cardData = getCardData(classes, cardsPerRow, reviews)
+              const rowCount = Math.ceil(guides.size / cardsPerRow)
+              const cardData = getCardData(classes, cardsPerRow, guides)
 
               return (
                 <div>
@@ -60,9 +60,9 @@ const Reviews = ({ classes, reviews }) => {
   )
 }
 
-Reviews.propTypes = {
+Guides.propTypes = {
   classes: PropTypes.object.isRequired,
-  reviews: PropTypes.instanceOf(List),
+  guides: PropTypes.instanceOf(List),
 }
 
-export default withStyles(styles)(Reviews)
+export default withStyles(styles)(Guides)

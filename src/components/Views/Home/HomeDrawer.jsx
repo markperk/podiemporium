@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import DashboardIcon from '@material-ui/icons/Dashboard'
-import AssignmentIcon from '@material-ui/icons/Assignment'
 import BarChartIcon from '@material-ui/icons/BarChart'
 import { NavLink } from 'react-router-dom'
 import { Flexbox } from '../../Layout'
@@ -46,12 +45,12 @@ const HomeDrawer = ({ classes, useDrawer }) => {
       >
         {
           <List>
-            <NavLink to='/apps/app-store'>
+            <NavLink to='/apps/guides'>
               <ListItem button>
                 <ListItemIcon>
                   <DashboardIcon />
                 </ListItemIcon>
-                <ListItemText primary="Composer App Tutorials" />
+                <ListItemText primary="Guides" />
               </ListItem>
             </NavLink>
             <NavLink to='/apps/reports'>
@@ -60,14 +59,6 @@ const HomeDrawer = ({ classes, useDrawer }) => {
                   <BarChartIcon />
                 </ListItemIcon>
                 <ListItemText primary="Reports" />
-              </ListItem>
-            </NavLink>
-            <NavLink to='/apps/guide'>
-              <ListItem button>
-                <ListItemIcon>
-                  <AssignmentIcon />
-                </ListItemIcon>
-                <ListItemText primary="Guide" />
               </ListItem>
             </NavLink>
           </List>

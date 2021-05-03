@@ -12,7 +12,7 @@ export const tutorialData = [
     "technology": "Elixir",
     "image": "https://www.dropbox.com/s/ruld3se4291l2u2/referrals.jpg?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -28,7 +28,7 @@ export const tutorialData = [
     "technology": "PHP",
     "image": "https://www.dropbox.com/s/lx8hr2amr7dwtag/integration.png?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -44,7 +44,7 @@ export const tutorialData = [
     "technology": "Node",
     "image": "https://www.dropbox.com/s/haot467edt357ve/video_chat_tile.png?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -60,7 +60,7 @@ export const tutorialData = [
     "technology": "Elixir",
     "image": "https://www.dropbox.com/s/j1awiitw7i56hwq/gpt3.png?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -76,7 +76,7 @@ export const tutorialData = [
     "technology": "Elixir",
     "image": "https://www.dropbox.com/s/rkfhpchxk9og8dl/brazil.jpg?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -92,7 +92,7 @@ export const tutorialData = [
     "technology": "Elixir",
     "image": "https://www.dropbox.com/s/1m4v9ptblqhap7z/Screen%20Shot%202021-04-28%20at%205.05.58%20PM.png?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -108,7 +108,7 @@ export const tutorialData = [
     "technology": "Solidity",
     "image": "https://www.dropbox.com/s/8lc4frts5dryqo7/Blockchain1.jpg?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -124,7 +124,7 @@ export const tutorialData = [
     "technology": "Java",
     "image": "https://www.dropbox.com/s/37mkxhot14udgbu/entrata.jpeg?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   },
   {
@@ -140,7 +140,7 @@ export const tutorialData = [
     "technology": "Visual Basic",
     "image": "https://www.dropbox.com/s/yjbpmi5x5gkfqzf/hotnready.jpg?raw=1",
     "color": "#a7610c",
-    "embedId": "FDRLjsptUdA",
+    "embedId": "Nikdbz6gBek",
     "download_link": "https://github.com/markperk/podiemporium/archive/refs/heads/main.zip"
   }
 ]
